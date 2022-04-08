@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "firstname": "Nishant",
+      "lastname": "Gupta",
+      "age": 32,
+      "gender": "Male",
+      "id": 1
+    },
+    {
+      "firstname": "sd",
+      "lastname": "",
+      "age": 0,
+      "gender": "Male",
+      "id": 2
+    },
+    {
+      "firstname": "Rakesh ",
+      "lastname": "Sharma",
+      "age": 23,
+      "gender": "Male",
+      "id": 3
+    }
+  ]
+}
