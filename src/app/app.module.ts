@@ -6,12 +6,14 @@ import {HttpClientModule} from '@angular/common/http'
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { UserformComponent } from './userform/userform.component';
+import { DirectivedemoComponent } from './directivedemo/directivedemo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    UserformComponent
+    UserformComponent,
+    DirectivedemoComponent
   ],
   imports: [
     BrowserModule,
