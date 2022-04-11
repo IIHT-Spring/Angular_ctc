@@ -54,3 +54,10 @@
 <div style="margin: 2%">
   <button (click)="save()" type="button" class="btn btn-primary btn-lg">Submit button</button>
 </div>
+
+<ul class="list-group">
+  <li *ngFor="let user of users; index as i" class="list-group-item">
+    {{user.firstname}} , {{user.age}}<button class="btn btn-danger" style="margin: 1%;" (click)="deleteRow(user, i)">delete</button>
+  </li>
+  
+</ul>

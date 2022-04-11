@@ -1,4 +1,9 @@
 {
+  "subjects": [
+    "Science",
+    "Arts",
+    "Maths"
+  ],
   "users": [
     {
       "firstname": "Nishant",
@@ -69,6 +74,41 @@
       "age": 22,
       "gender": "Male",
       "id": 10
+    },
+    {
+      "firstname": "Nishant",
+      "lastname": "Gupta",
+      "age": 31,
+      "gender": "Male",
+      "id": 11
+    },
+    {
+      "firstname": "Raghav",
+      "lastname": "Singh",
+      "age": 22,
+      "gender": "Male",
+      "id": 12
+    },
+    {
+      "firstname": "Raghav",
+      "lastname": "Singh",
+      "age": 22,
+      "gender": "Male",
+      "id": 13
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "age": 0,
+      "gender": "Male",
+      "id": 14
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "age": 0,
+      "gender": "Male",
+      "id": 15
     }
   ]
 }

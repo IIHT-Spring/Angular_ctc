@@ -8,6 +8,15 @@ import { HttpResponse } from '@angular/common/http';
 })
 export class UserformComponent implements OnInit {
   heading = 'Please Enter the data below all fields are mandatory.';
+  users=[];
+  deleteRow(user, index) {
+    const observable = this.userService.deleteUser(user);
+    observable.subscribe((response: any) => {
+      console.log(response);
+      this.users.splice(index,1)
+      
+    })
+  }
   user = {
     firstname: '',
     lastname: '',
@@ -19,6 +28,7 @@ export class UserformComponent implements OnInit {
     const observable = this.userService.createUser(this.user);
     observable.subscribe((response: any) => {
       console.log(response);
+      this.users.push(response);
     },
     function(error) {
       alert("something went wrong")
