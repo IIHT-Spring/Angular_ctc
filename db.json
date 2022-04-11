@@ -109,6 +109,15 @@
       "age": 0,
       "gender": "Male",
       "id": 15
+    },
+    {
+      "firstname": "Nishant",
+      "lastname": "Gupta",
+      "age": 32,
+      "gender": "Female",
+      "dob": "2022-04-11",
+      "subject": "Science",
+      "id": 16
     }
   ]
 }

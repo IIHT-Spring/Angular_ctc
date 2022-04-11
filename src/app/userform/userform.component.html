@@ -27,6 +27,7 @@
     aria-describedby="inputGroup-sizing-default"
   />
 </div>
+DOB : <input type="date" [(ngModel)]="user.dob" />
 
 <div style="margin: 2%" class="form-check">
   <input
@@ -50,14 +51,32 @@
   />
   <label class="form-check-label" for="flexRadioDefault1"> Female </label>
 </div>
+<div *ngFor="let subject of subjects">
+  <input
+    style="margin: 2%"
+    [(ngModel)]="user.subject"
+    value="{{ subject }}"
+    class="form-check-input"
+    type="radio"
+  />
+  {{ subject }}
+</div>
 
 <div style="margin: 2%">
-  <button (click)="save()" type="button" class="btn btn-primary btn-lg">Submit button</button>
+  <button (click)="save()" type="button" class="btn btn-primary btn-lg">
+    Submit button
+  </button>
 </div>
 
 <ul class="list-group">
   <li *ngFor="let user of users; index as i" class="list-group-item">
-    {{user.firstname}} , {{user.age}}<button class="btn btn-danger" style="margin: 1%;" (click)="deleteRow(user, i)">delete</button>
+    {{ user.firstname }} , {{ user.age
+    }}<button
+      class="btn btn-danger"
+      style="margin: 1%"
+      (click)="deleteRow(user, i)"
+    >
+      delete
+    </button>
   </li>
-  
 </ul>

@@ -6,6 +6,9 @@ import {HttpClient,HttpClientModule} from '@angular/common/http'
 })
 export class UserService {
   BASE_URL = "http://localhost:3000/users"
+  getSubjects() {
+    return this.http.get("http://localhost:3000/subjects");
+  }
   deleteUser(user: any) {
     return this.http.delete(this.BASE_URL + user.id)
   }
