@@ -10,6 +10,16 @@ export class DirectivedemoComponent implements OnInit {
   presentDate = new Date()
   demotext= "this is demo string"
   price= 1000;
+  num1 = 12.223343;
+  num2 = 1.2312;
+  score = 0.50;
+  object = {
+    id : 1, name: 
+    {
+      firstname: "Nishant",
+      lastname: "Gupta"
+    }
+  }
   constructor() { }
  
   ngOnInit(): void {
