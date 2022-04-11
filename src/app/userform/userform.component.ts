@@ -8,6 +8,7 @@ import { HttpResponse } from '@angular/common/http';
 })
 export class UserformComponent implements OnInit {
   heading = 'Please Enter the data below all fields are mandatory.';
+  
   users=[];
   isOpen = false;
   subjects : any[] = [];
@@ -24,10 +25,11 @@ export class UserformComponent implements OnInit {
     lastname: '',
     age: 0,
     gender: 'Male',
-    dob:'',
+    dob:new Date(),
     subject: ""
   };
   save() {
+    this.user.dob = new Date(this.user.dob)
     // console.log(this.user.firstname);
     const observable = this.userService.createUser(this.user);
     observable.subscribe((response: any) => {

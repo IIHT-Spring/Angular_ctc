@@ -11,6 +11,21 @@
 <ng-template #noCourse style="text-align: center;">
     No courses Available at the moment
 </ng-template>
+<div>
+  Today's date : {{presentDate | date:'fullDate' | uppercase}}
+  <br/>
+  Today's date : {{presentDate | date:'shortDate' }}
+  <br/>
+  Today's date : {{presentDate | date:'dd/M/yyyy'}}
+  <br/>
+  Today's date : {{presentDate | date:'M/dd/yyyy'}}
+</div>
+<div>
+  the demo text : {{demotext | uppercase}} 
+  <br/>
+  the total cost is : {{price | currency}}
+ 
+</div>
 
 
 

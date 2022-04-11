@@ -68,7 +68,33 @@ DOB : <input type="date" [(ngModel)]="user.dob" />
   </button>
 </div>
 
-<ul class="list-group">
+<table class="table table-striped">
+  <thead class="thread-dark">
+    <tr>
+      <th scope="col">Firstname</th>
+      <th scope="col">Age</th>
+      <th scope="col">DOB</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users; index as i">
+      <td>{{ user.firstname }}</td>
+      <td>{{ user.age }}</td>
+      <td>{{ user.dob | date}}</td>
+      <td>
+        <button
+          class="btn btn-danger"
+          style="margin: 1%"
+          (click)="deleteRow(user, i)"
+        >
+          Delete user
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- <ul class="list-group">
   <li *ngFor="let user of users; index as i" class="list-group-item">
     {{ user.firstname }} , {{ user.age
     }}<button
@@ -79,4 +105,4 @@ DOB : <input type="date" [(ngModel)]="user.dob" />
       delete
     </button>
   </li>
-</ul>
+</ul> -->

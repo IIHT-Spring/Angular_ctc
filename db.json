@@ -118,6 +118,42 @@
       "dob": "2022-04-11",
       "subject": "Science",
       "id": 16
+    },
+    {
+      "firstname": "akshay",
+      "lastname": "kumar",
+      "age": 30,
+      "gender": "Male",
+      "dob": "2022-04-14",
+      "subject": "Arts",
+      "id": 17
+    },
+    {
+      "firstname": "vijay",
+      "lastname": "kumar",
+      "age": 32,
+      "gender": "Male",
+      "dob": "2022-04-14",
+      "subject": "Arts",
+      "id": 18
+    },
+    {
+      "firstname": "asdaa",
+      "lastname": "asdaa",
+      "age": 23,
+      "gender": "Male",
+      "dob": "2022-06-23",
+      "subject": "",
+      "id": 19
+    },
+    {
+      "firstname": "kkaakkaa",
+      "lastname": "kkakkka",
+      "age": 34,
+      "gender": "Male",
+      "dob": "1995-06-22T00:00:00.000Z",
+      "subject": "Arts",
+      "id": 20
     }
   ]
 }

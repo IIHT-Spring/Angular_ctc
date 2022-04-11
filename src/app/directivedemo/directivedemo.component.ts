@@ -7,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DirectivedemoComponent implements OnInit {
   courses = [];
+  presentDate = new Date()
+  demotext= "this is demo string"
+  price= 1000;
   constructor() { }
-
+ 
   ngOnInit(): void {
   }
 
